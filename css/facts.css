@@ -1,0 +1,84 @@
+.facts {
+    background-color: blue;
+}
+
+.facts__list {
+    display: flex;
+    justify-content: right;
+    padding: 10px 30px;
+    gap: 10px;
+}
+
+.facts__item {
+    color: red;
+    font-size: 25px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.facts__item:hover {
+    color: black;
+}
+
+.facts__item::marker {
+    color: red;
+
+}
+
+.facts__title {
+    background-color: black;
+    color: grey;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 0px;
+}
+
+.facts table,
+.facts td,
+.facts th {
+    border: 3px solid red;
+    border-radius: 5px;
+
+    border-collapse: collapse;
+}
+
+.facts td,
+.facts th {
+    padding: 5px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.facts table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facts td:hover {
+    background-color: black;
+}
+
+
+/* .homework {
+    background: linear-gradient(0deg, red, blue);
+} */
+
+.homework table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homework table,
+.homework td,
+.homework th {
+    border: 3px solid red;
+    background-color: blue;
+    border-collapse: collapse;
+}
+
+.homework td,
+.homework th {
+    padding: 5px 20px;
+    color: white;
+    font-size: 20px;
+}

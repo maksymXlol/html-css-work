@@ -1,0 +1,38 @@
+.about {
+    background-color: blue;
+}
+
+.about .container {
+    max-width: 1000px;
+}
+
+.about::after {
+    content: '';
+    clear: both;
+}
+
+.about__img {
+    width: 500px;
+    max-width: 100%;
+    float: right;
+    margin-left: 15px;
+}
+
+.about__text {
+    color: red;
+    padding-top: 15px;
+    line-height: 1.5;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.about__text::first-letter {
+    margin-left: 20px;
+}
+
+.quote {
+    width: 25px;
+    height: 25px;
+    display: inline;
+
+}

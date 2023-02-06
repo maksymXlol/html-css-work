@@ -1,0 +1,38 @@
+section.intro {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    overflow: clip;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__title {
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    z-index:2;
+}
+
+.intro__title a {
+    color: red;
+    text-decoration: none;
+    display: block;
+}
+
+.intro__title a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+
+}
+
+.intro__img {
+    height: 400px;
+    position: absolute;
+    right: -14px;
+    top: 50px;
+}

@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+}
+
+.gallery .container {
+    display: grid;
+    max-width: 1200px;
+}
+
+.gallery__title {
+    color: red;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 30px;
+    background: linear-gradient(90deg,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery__title:hover {
+    text-decoration: underline; 
+    background: linear-gradient(270deg,red,blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 5px;
+}
+
+.gallery__photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__photo:nth-child(1) {
+    grid-row: span 2;
+}
+
+.gallery__photo:nth-child(2) {
+    grid-column: span 2;
+}
+
+.gallery__photo:nth-child(4) {
+    grid-column: span 2;
+
+}
+
+.gallery__photo:nth-child(6) {
+    grid-column: span 2;
+}
+
+.gallery__photo:nth-child(7) {
+    grid-column: span 2;
+}
+
+.gallery__photo:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery__photo:nth-child(9) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery__photo:nth-child(10) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.gallery__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s;
+}
+
+.gallery__photo:hover img {
+    transform: scale(1.2);
+}
+
+.gallery__photo p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    color: red;
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 2s, transform 1s;
+    text-shadow: 0 0 20px black;
+
+}
+
+.gallery__photo:hover p {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.gallery__photo::after {
+    content: '';
+    transition: opacity 1s;
+
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.247);
+    backdrop-filter: grayscale(1);
+    z-index: 2;
+    opacity: 0;
+}
+
+.gallery__photo:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .gallery__title {
+        color: white;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .gallery__images {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__images .gallery__photo {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+}
