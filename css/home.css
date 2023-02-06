@@ -36,3 +36,9 @@ section.intro {
     right: -14px;
     top: 50px;
 }
+
+@media (max-width:425px) {
+    .intro__title {
+        font-size: 75px;
+    }
+}
