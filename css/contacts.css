@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts form {
+  background-color: red;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+fieldset input {
+  flex: 1;
+}
